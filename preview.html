@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TrackPeak AI Prototype</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f4f6f8}
+header{background:#111;color:white;padding:16px;text-align:center}
+.container{padding:16px;max-width:900px;margin:auto}
+.card{background:white;padding:16px;margin:12px 0;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+input,select,button{width:100%;padding:10px;margin-top:6px}
+button{background:#111;color:white;border:none;border-radius:8px}
+.nav{position:fixed;bottom:0;left:0;right:0;background:white;border-top:1px solid #ccc;display:flex;justify-content:space-around;padding:10px}
+</style>
+</head>
+<body>
+<header>
+<h1>TrackPeak AI</h1>
+<p>Interactive Prototype</p>
+</header>
+
+<div class="container">
+<div class="card">
+<h2>Athlete Setup</h2>
+<input placeholder="Athlete Name">
+<select>
+<option>Grade 9</option>
+<option>Grade 10</option>
+<option>Grade 11</option>
+<option>Grade 12</option>
+</select>
+<select>
+<option>800m</option>
+<option>1600m</option>
+<option>3200m</option>
+<option>400m</option>
+<option>High Jump</option>
+</select>
+<input placeholder="Current PR">
+<button>Generate Plan</button>
+</div>
+
+<div class="grid">
+<div class="card">
+<h3>Today's Workout</h3>
+<p>6 x 400m @ 72 sec</p>
+<p>Goal: Aerobic Power</p>
+<button>Mark Complete</button>
+</div>
+
+<div class="card">
+<h3>Strength</h3>
+<p>Squat 3x5</p>
+<p>RDL 3x8</p>
+<p>Core Circuit</p>
+</div>
+
+<div class="card">
+<h3>Plyometrics</h3>
+<p>Bounding 4x25m</p>
+<p>Box Jumps 4x5</p>
+</div>
+</div>
+
+<div class="card">
+<h2>Weekly Calendar</h2>
+<ul>
+<li>Mon - Workout</li>
+<li>Tue - Strength + Plyos</li>
+<li>Wed - Recovery</li>
+<li>Thu - Workout</li>
+<li>Fri - Pre Meet</li>
+<li>Sat - Race</li>
+<li>Sun - Recovery</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Workout Log</h2>
+<input placeholder="RPE (1-10)">
+<input placeholder="Sleep Hours">
+<input placeholder="Soreness (1-10)">
+<button>Save Workout</button>
+</div>
+</div>
+
+<div class="nav">
+<span>Dashboard</span>
+<span>Workouts</span>
+<span>Calendar</span>
+<span>Meets</span>
+<span>Profile</span>
+</div>
+</body>
+</html>
